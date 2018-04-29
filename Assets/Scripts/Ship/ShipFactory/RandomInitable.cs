@@ -50,6 +50,19 @@ public class RandomInitable
             e.MoveNext();
         return e.Current;
     }
+    public T WeightedPick<T>(ICollection<KeyValuePair<float,T>> items)
+    {
+        var max = items.Sum(item=>item.Key);
+        float cumulative = 0;
+        float diceRoll = value;
+        for (int i = 0; i < items.Count; i++)
+        {
+            cumulative += items.ElementAt(i).Key/max;
+            if (diceRoll < cumulative)
+                return items.ElementAt(i).Value;
+        }
+        return items.Last().Value;
+    }
     public IOrderedEnumerable<T> Chose<T>(ICollection<T> c, int num)
     {
 

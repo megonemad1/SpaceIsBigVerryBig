@@ -11,9 +11,17 @@ public class ShipTextureCreator : MonoBehaviour, ISeedSetter
     Template _template;
     RandomInitable R;
     // Use this for initialization
-   
 
 
+    public void setSeed(int seed)
+    {
+        R.InitState(seed);
+        setSprite(R, _template);
+    }
+    public void setSeed(string seed)
+    {
+        setSeed(seed.GetHashCode());
+    }   
     void Awake()
     {
         R = new RandomInitable(seed.Value);
