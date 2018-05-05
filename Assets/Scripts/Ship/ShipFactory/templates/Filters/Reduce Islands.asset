@@ -8,6 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92a6d9eaed1b1944ea6b664c7d033ad6, type: 3}
-  m_Name: standedShift
+  m_Script: {fileID: 11500000, guid: 0b4da1c6e30df5f489805e9694127740, type: 3}
+  m_Name: Reduce Islands
   m_EditorClassIdentifier: 
+  weight: 1
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}

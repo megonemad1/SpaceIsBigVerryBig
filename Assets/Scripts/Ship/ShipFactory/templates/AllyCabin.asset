@@ -9,19 +9,22 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ed6aa5c37077494fbb5c685c212a5b8, type: 3}
-  m_Name: Test4
+  m_Name: AllyDeck
   m_EditorClassIdentifier: 
-  Layout: {fileID: 2800000, guid: d1a98f771f6740b46ab91d2f5ab03ef2, type: 3}
+  Layout: {fileID: 2800000, guid: 1d8a34e42f504bf42bd4566f230d6bcb, type: 3}
   Rules:
   - ColorKey: {r: 1, g: 1, b: 1, a: 1}
-    rule: {fileID: 11400000, guid: 39c8426db1aab9a4386c367fbcb9e7c8, type: 2}
+    rule: {fileID: 0}
     enabled: 1
   - ColorKey: {r: 0, g: 0, b: 0, a: 1}
-    rule: {fileID: 11400000, guid: 0a9961846a39c6c40acc795f66bdbc39, type: 2}
+    rule: {fileID: 0}
     enabled: 1
-  - ColorKey: {r: 0, g: 0.63529414, b: 0.9098039, a: 1}
-    rule: {fileID: 11400000, guid: fa4fbe13d4210c84497235fb6b88ce3d, type: 2}
+  - ColorKey: {r: 0.24705882, g: 0.28235295, b: 0.8, a: 1}
+    rule: {fileID: 0}
     enabled: 1
-  isMirroredY: 1
+  - ColorKey: {r: 0.92941177, g: 0.10980392, b: 0.14117648, a: 1}
+    rule: {fileID: 0}
+    enabled: 1
+  isMirroredY: 0
   isMirroredX: 0
   filters: []

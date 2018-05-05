@@ -32,7 +32,3 @@ MonoBehaviour:
     color: {r: 0.107600555, g: 0.19403118, b: 0.735849, a: 1}
     rule: {fileID: 0}
     probability: 1
-  - isRefrence: 0
-    color: {r: 0, g: 0, b: 0, a: 0}
-    rule: {fileID: 0}
-    probability: 5

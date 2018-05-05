@@ -20,10 +20,6 @@ MonoBehaviour:
     color: {r: 0.18431373, g: 0.18431373, b: 0.18431373, a: 0}
     rule: {fileID: 0}
     probability: 1
-  - isRefrence: 1
-    color: {r: 0, g: 0, b: 0, a: 0}
-    rule: {fileID: 11400000, guid: 0a9961846a39c6c40acc795f66bdbc39, type: 2}
-    probability: 2
   - isRefrence: 0
     color: {r: 0.3207547, g: 0.20728016, b: 0.20728016, a: 0}
     rule: {fileID: 0}

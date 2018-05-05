@@ -9,18 +9,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4581bb3616d55b4489d227239e10ad8, type: 3}
-  m_Name: Energy
+  m_Name: EnergyOrMetal
   m_EditorClassIdentifier: 
   _probablilitys:
-  - isRefrence: 0
-    color: {r: 0.39489147, g: 0.9622642, b: 0.7781222, a: 1}
-    rule: {fileID: 0}
+  - isRefrence: 1
+    color: {r: 0, g: 0, b: 0, a: 0}
+    rule: {fileID: 11400000, guid: ceb4a9f296d91754ebd69dc75567468f, type: 2}
     probability: 1
-  - isRefrence: 0
-    color: {r: 0.17421682, g: 0.8207547, b: 0.609732, a: 1}
-    rule: {fileID: 0}
-    probability: 1
-  - isRefrence: 0
-    color: {r: 0.3023318, g: 0.8113208, b: 0.64519244, a: 1}
-    rule: {fileID: 0}
-    probability: 1
+  - isRefrence: 1
+    color: {r: 0, g: 0, b: 0, a: 0}
+    rule: {fileID: 11400000, guid: 6775f70abde7deb48a290fa65e8467f7, type: 2}
+    probability: 2

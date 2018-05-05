@@ -23,9 +23,11 @@ public class ColorValueAvrage : PixelFilter
         center_A = a.color.a;
         avr_S = 1;
         avr_V = 1;
+
         a.nabours.ForEach((color) =>
         {
-
+            if (color.a == 0)
+                return;
             float tmp_H, tmp_S, tmp_V;
             Color.RGBToHSV(color, out tmp_H, out tmp_S, out tmp_V);
             avr_S += tmp_S;
