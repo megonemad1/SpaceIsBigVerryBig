@@ -32,15 +32,15 @@ public class MovemonetHarness : MonoBehaviour
             //if the direction has changed
 
             //if the direction has changed and it hasnt changed from zero
-            if ((newVelocity.x > 0 && direction.x < 0) || (newVelocity.x < 0 && direction.x > 0) || direction.x==0)
+            if ((newVelocity.x > 0 && direction.x < 0) || (newVelocity.x < 0 && direction.x > 0) || direction.x == 0)
                 newVelocity.x -= newVelocity.x * dragAmount * Time.fixedDeltaTime;
 
             //if the direction has changed and it hasnt changed from zero
             if ((newVelocity.y > 0 && direction.y < 0) || (newVelocity.y < 0 && direction.y > 0) || direction.y == 0)
                 newVelocity.y -= newVelocity.y * dragAmount * Time.fixedDeltaTime;
 
-            newVelocity.x = Mathf.Min(newVelocity.x, topSpeed.x);
-            newVelocity.y = Mathf.Min(newVelocity.y, topSpeed.y);
+            newVelocity.x = Mathf.Min(Mathf.Abs(newVelocity.x), topSpeed.x) * Mathf.Sign(newVelocity.x);
+            newVelocity.y = Mathf.Min(Mathf.Abs(newVelocity.y), topSpeed.y) * Mathf.Sign(newVelocity.y);
             rbody.velocity = newVelocity;
             rbody.AddForce(direction * Force * Time.fixedDeltaTime, ForceMode2D.Impulse);
         }
