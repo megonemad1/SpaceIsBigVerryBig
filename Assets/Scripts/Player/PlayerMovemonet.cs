@@ -21,7 +21,7 @@ public class PlayerMovemonet : MonoBehaviour
             {
                 if(tmp == "D")
                 {
-                    rbody.velocity = Vector2.Lerp(rbody.velocity, Vector2.zero, 0.5f);
+                    rbody.velocity = Vector2.zero;
                 }
                 rbody.AddForce(-this.transform.right,ForceMode2D.Impulse);
                 tmp = "A";
@@ -30,7 +30,7 @@ public class PlayerMovemonet : MonoBehaviour
             {
                 if(tmp == "S")
                 {
-                    rbody.velocity = Vector2.Lerp(rbody.velocity, Vector2.zero, 0.5f);
+                    rbody.velocity = Vector2.zero;
                 }
                 rbody.AddForce(this.transform.up,ForceMode2D.Impulse);
                 tmp = "W";
@@ -39,7 +39,7 @@ public class PlayerMovemonet : MonoBehaviour
             {
                 if(tmp == "W")
                 {
-                    rbody.velocity = Vector2.Lerp(rbody.velocity, Vector2.zero, 0.5f);
+                    rbody.velocity = Vector2.zero;
                 }
                 rbody.AddForce(-this.transform.up,ForceMode2D.Impulse);
                 tmp = "S";
@@ -48,7 +48,7 @@ public class PlayerMovemonet : MonoBehaviour
             {
                 if(tmp == "A")
                 {
-                    rbody.velocity = Vector2.Lerp(rbody.velocity, Vector2.zero, 0.5f);
+                    rbody.velocity = Vector2.zero;
                 }
                 rbody.AddForce(this.transform.right,ForceMode2D.Impulse);
                 tmp = "D";
