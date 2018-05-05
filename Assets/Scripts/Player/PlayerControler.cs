@@ -23,8 +23,7 @@ public class PlayerControler : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (PlayerDirectionImput.SqrMagnitude() != 0)
-            mover.Move(PlayerDirectionImput);
+        mover.Move(PlayerDirectionImput);
     }
     private void Update()
     {

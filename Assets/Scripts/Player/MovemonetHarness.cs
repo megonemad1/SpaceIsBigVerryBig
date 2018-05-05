@@ -28,6 +28,18 @@ public class MovemonetHarness : MonoBehaviour
         }
         else
             Debug.LogError("Movement Harness Missing Rigidbody2D", this.gameObject);
+        LastDirectionMoved = direction;
+
+    }
+    private void FixedUpdate()
+    {
+        Vector2 Drag = Vector2.one;
+        if (LastDirectionMoved.x == 0)
+            Drag.x /= 2;
+        if (LastDirectionMoved.y == 0)
+            Drag.y /= 2;
+        rbody.velocity.Scale(Drag);
+
 
     }
 }
