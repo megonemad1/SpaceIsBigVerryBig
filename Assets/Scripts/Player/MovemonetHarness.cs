@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Extensions;
 
 public class MovemonetHarness : MonoBehaviour
 {
@@ -38,7 +39,7 @@ public class MovemonetHarness : MonoBehaviour
             Drag.x /= 2;
         if (LastDirectionMoved.y == 0)
             Drag.y /= 2;
-        rbody.velocity.Scale(Drag);
+        rbody.velocity= rbody.velocity.ScaleChain(Drag);
 
 
     }
