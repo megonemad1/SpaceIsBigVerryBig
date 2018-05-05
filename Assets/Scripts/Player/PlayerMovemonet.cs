@@ -1,10 +1,11 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovemonet : MonoBehaviour
 {
     private Rigidbody2D rbody = null;
+    private string tmp = "";
     // Use this for initialization
     void Start()
     {
@@ -14,22 +15,45 @@ public class PlayerMovemonet : MonoBehaviour
     {
         if (rbody != null)
         {
+            var spd = rbody.velocity;
+
             if (Input.GetKey(KeyCode.A))
-                rbody.AddTorque(0.1f, ForceMode2D.Impulse);
-
+            {
+                if(tmp == "D")
+                {
+                    rbody.velocity = Vector2.Lerp(rbody.velocity, Vector2.zero, 0.5f);
+                }
+                rbody.AddForce(-this.transform.right,ForceMode2D.Impulse);
+                tmp = "A";
+            }
             if (Input.GetKey(KeyCode.W))
+            {
+                if(tmp == "S")
+                {
+                    rbody.velocity = Vector2.Lerp(rbody.velocity, Vector2.zero, 0.5f);
+                }
                 rbody.AddForce(this.transform.up,ForceMode2D.Impulse);
-
+                tmp = "W";
+            }
             if (Input.GetKey(KeyCode.S))
             {
-                rbody.velocity = Vector2.Lerp(rbody.velocity, Vector2.zero, 0.05f);
-                rbody.angularVelocity = Mathf.Lerp(rbody.angularVelocity, 0f, 0.05f);
+                if(tmp == "W")
+                {
+                    rbody.velocity = Vector2.Lerp(rbody.velocity, Vector2.zero, 0.5f);
+                }
+                rbody.AddForce(-this.transform.up,ForceMode2D.Impulse);
+                tmp = "S";
             }
             if (Input.GetKey(KeyCode.D))
-                rbody.AddTorque(-0.1f, ForceMode2D.Impulse);
-
+            {
+                if(tmp == "A")
+                {
+                    rbody.velocity = Vector2.Lerp(rbody.velocity, Vector2.zero, 0.5f);
+                }
+                rbody.AddForce(this.transform.right,ForceMode2D.Impulse);
+                tmp = "D";
+            }
         }
-       
     }
     // Update is called once per frame
     void Update()
