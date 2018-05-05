@@ -16,8 +16,7 @@ public class ShipTextureCreator : MonoBehaviour, ISeedSetter
 
     public void setSeed(int seed)
     {
-        R.InitState(seed);
-        setSprite(R, _template);
+        this.seed.Value = seed;
     }
     public void setSeed(string seed)
     {

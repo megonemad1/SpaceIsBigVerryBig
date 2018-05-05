@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4581bb3616d55b4489d227239e10ad8, type: 3}
-  m_Name: MetalOrBody
+  m_Name: MetalOrEmptyBody
   m_EditorClassIdentifier: 
   _probablilitys:
   - isRefrence: 1
@@ -18,5 +18,5 @@ MonoBehaviour:
     probability: 2
   - isRefrence: 1
     color: {r: 0, g: 0, b: 0, a: 0}
-    rule: {fileID: 11400000, guid: 0a9961846a39c6c40acc795f66bdbc39, type: 2}
+    rule: {fileID: 11400000, guid: 699650bc896a5514fa9c2ea73e04d4c9, type: 2}
     probability: 1

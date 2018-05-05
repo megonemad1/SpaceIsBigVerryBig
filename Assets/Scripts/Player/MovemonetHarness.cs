@@ -5,6 +5,7 @@ using Extensions;
 
 public class MovemonetHarness : MonoBehaviour
 {
+    [SerializeField]
     private Rigidbody2D rbody = null;
     [SerializeField]
     float Force = 1;
@@ -20,6 +21,7 @@ public class MovemonetHarness : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
+        if (!rbody)
         rbody = this.GetComponent<Rigidbody2D>();
     }
 

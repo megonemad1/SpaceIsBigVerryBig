@@ -22,7 +22,7 @@ public class Observe<T>
 
     protected virtual bool IsEquel(T a,T b) { return a.Equals(b); }
 
-    public  T Value
+    public T Value
     {
         get { return value; }
         set

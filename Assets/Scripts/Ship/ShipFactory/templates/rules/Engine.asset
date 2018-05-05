@@ -13,22 +13,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _probablilitys:
   - isRefrence: 0
-    color: {r: 0.8301887, g: 0.7499299, b: 0.12922749, a: 0}
+    color: {r: 0.8301887, g: 0.7499299, b: 0.12922749, a: 1}
     rule: {fileID: 0}
     probability: 1
   - isRefrence: 0
-    color: {r: 0.83137256, g: 0.5991275, b: 0.12941177, a: 0}
+    color: {r: 0.83137256, g: 0.5991275, b: 0.12941177, a: 1}
     rule: {fileID: 0}
     probability: 1
   - isRefrence: 0
-    color: {r: 0.83137256, g: 0.4197561, b: 0.12941177, a: 0}
+    color: {r: 0.83137256, g: 0.4197561, b: 0.12941177, a: 1}
     rule: {fileID: 0}
     probability: 1
   - isRefrence: 0
-    color: {r: 0.7504203, g: 0.83137256, b: 0.12941177, a: 0}
+    color: {r: 0.7504203, g: 0.83137256, b: 0.12941177, a: 1}
     rule: {fileID: 0}
-    probability: 1
-  - isRefrence: 1
-    color: {r: 0.7504203, g: 0.83137256, b: 0.12941177, a: 0}
-    rule: {fileID: 11400000, guid: ceb4a9f296d91754ebd69dc75567468f, type: 2}
     probability: 1

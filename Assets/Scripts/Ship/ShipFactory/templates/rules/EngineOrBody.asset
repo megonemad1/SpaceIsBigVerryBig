@@ -9,12 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4581bb3616d55b4489d227239e10ad8, type: 3}
-  m_Name: MetalOrBody
+  m_Name: EngineOrBody
   m_EditorClassIdentifier: 
   _probablilitys:
   - isRefrence: 1
     color: {r: 0, g: 0, b: 0, a: 0}
-    rule: {fileID: 11400000, guid: ceb4a9f296d91754ebd69dc75567468f, type: 2}
+    rule: {fileID: 11400000, guid: 8178698467c9e2c4dafd775028fbb31d, type: 2}
     probability: 2
   - isRefrence: 1
     color: {r: 0, g: 0, b: 0, a: 0}

@@ -17,10 +17,10 @@ MonoBehaviour:
     rule: {fileID: 0}
     probability: 1
   - isRefrence: 0
-    color: {r: 0.18431373, g: 0.18431373, b: 0.18431373, a: 0}
+    color: {r: 0.18431373, g: 0.18431373, b: 0.18431373, a: 1}
     rule: {fileID: 0}
     probability: 1
   - isRefrence: 0
-    color: {r: 0.3207547, g: 0.20728016, b: 0.20728016, a: 0}
+    color: {r: 0.3584906, g: 0.20799218, b: 0.20799218, a: 1}
     rule: {fileID: 0}
     probability: 1
