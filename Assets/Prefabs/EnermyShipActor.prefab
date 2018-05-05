@@ -37,7 +37,7 @@ Transform:
   m_GameObject: {fileID: 1738052388187252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3, y: 3, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   xDirection: 0
-  decisionIntervel: 0
+  decisionIntervel: 1
   _decisionOptions: []
   killDecisionLoop: 0
   controler: {fileID: 0}
@@ -90,6 +90,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rbody: {fileID: 0}
-  Force: 1
+  Force: 5
   dragAmount: 1
-  topSpeed: {x: 10, y: 10}
+  topSpeed: {x: 2, y: 0.75}

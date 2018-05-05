@@ -31,10 +31,12 @@ public class ShipTextureCreator : MonoBehaviour, ISeedSetter
             setSprite(R, _template);
         };
         setSprite(R, _template);
+
     }
 
     private void setSprite(RandomInitable R, Template _template)
     {
+        Debug.Log("makeing a sprite",this.gameObject);
         var rect = new Rect(Vector2.zero, Vector2.one);
         var pivot = Vector2.one / 2;
 

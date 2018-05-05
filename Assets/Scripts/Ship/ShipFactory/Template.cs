@@ -37,6 +37,7 @@ public class Template : ScriptableObject
     }
     public IEnumerator CreateShip(RandomInitable R, Action<Texture2D> cb)
     {
+        Debug.Log("started Corouteen");
         int width = isMirroredY ? Layout.width * 2 : Layout.width;
         int height = isMirroredX ? Layout.height * 2 : Layout.height;
         // Create a new 2x2 texture ARGB32 (32 bit with alpha) and no mipmaps

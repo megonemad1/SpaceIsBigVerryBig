@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-internal class ScriptableDecisionOption:ScriptableObject
+public class ScriptableDecisionOption:ScriptableObject
 {
   
 

@@ -11,11 +11,22 @@ public class EnermyAI : MonoBehaviour
     public float xDirection;
     [SerializeField]
     float decisionIntervel;
-
     [SerializeField]
-    List<ScriptableDecisionOption> _decisionOptions;
-    Stack<ScriptableDecisionOption> decisionOptions;
-
+    List<ScriptableDecisionOption> _decisionOptions = new List<ScriptableDecisionOption>();
+    Stack<ScriptableDecisionOption> decisionOptions = new Stack<ScriptableDecisionOption>();
+    public List<ScriptableDecisionOption> DecisionOptions
+    {
+        set
+        {
+            decisionOptions.Clear();
+            _decisionOptions.Clear();
+            value.ForEach(i =>
+            {
+                decisionOptions.Push(i); _decisionOptions.Add(i);
+            });
+        }
+        get { return _decisionOptions.ToArray().ToList(); }
+    }
 
     [HideInInspector]
     public bool killDecisionLoop;
@@ -35,13 +46,18 @@ public class EnermyAI : MonoBehaviour
     }
 
     public SpawnEnemy controler;
+    public RandomInitable R;
 
     IEnumerator DecisionLoop()
     {
+        yield return new WaitForSeconds(1);
         while (!killDecisionLoop)
         {
-            if (decisionOptions!=null && decisionOptions.Count > 0)
+            if (decisionOptions != null && decisionOptions.Count > 0)
+            {
+                Debug.Log("decision Made");
                 decisionOptions.Pop().go(this, controler);
+            }
             else
                 StartCoroutine(killAfter(5));
             yield return new WaitForSeconds(decisionIntervel);

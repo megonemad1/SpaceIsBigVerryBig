@@ -12,6 +12,10 @@ public class SpawnEnemy : MonoBehaviour
     GameObject EnermySpritePrefab;
 
     [SerializeField]
+    ScriptableDecisionOption[] options;
+    [SerializeField]
+    int DecisionsPerShip;
+    [SerializeField]
     float SpawnTickIntervel = 1;
     [SerializeField]
     ObserverInt seed;
@@ -51,13 +55,25 @@ public class SpawnEnemy : MonoBehaviour
     private IEnumerator SpawnTick()
     {
         int shipSeed = 0;
+        List<ScriptableDecisionOption> decisions = new List<ScriptableDecisionOption>();
         while (!killSpawnLoop)
         {
             shipSeed = r.valueInt;
-            GameObject newEnermy = Instantiate(EnermyActorPrefab, transform);
-            Instantiate(EnermySpritePrefab, newEnermy.transform).GetComponentsInChildren<ShipTextureCreator>().ToList().ForEach(a=>a.setSeed(shipSeed++));
-            newEnermy.transform.LookAt(newEnermy.transform.position + Vector3.down);
-            newEnermy.GetComponent<EnermyAI>().controler = this;
+            if (true)
+            {
+                GameObject newEnermy = Instantiate(EnermyActorPrefab, transform);
+                var tmp_R = new RandomInitable(shipSeed);
+                newEnermy.transform.position += Vector3.right * tmp_R.Range(-left, right);
+                var ai = newEnermy.GetComponent<EnermyAI>();
+                ai.R = tmp_R;
+                decisions.Clear();
+                for (int i = 0; i < DecisionsPerShip; i++)
+                    decisions.Add(r.Pick(options));
+                ai.DecisionOptions = decisions;
+                Instantiate(EnermySpritePrefab, newEnermy.transform).GetComponentsInChildren<ShipTextureCreator>().ToList().ForEach(a => a.setSeed(ai.R.valueInt));
+                newEnermy.transform.Rotate(0, 0, 180);
+                newEnermy.GetComponent<EnermyAI>().controler = this;
+            }
             yield return new WaitForSeconds(SpawnTickIntervel);
         }
     }
