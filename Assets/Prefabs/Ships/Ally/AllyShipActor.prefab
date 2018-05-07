@@ -21,9 +21,10 @@ GameObject:
   - component: {fileID: 4881711773821154}
   - component: {fileID: 114538197951726434}
   - component: {fileID: 50373160267988496}
-  - component: {fileID: 114089933019522494}
+  - component: {fileID: 114910246699376380}
+  - component: {fileID: 114262195443510250}
   m_Layer: 0
-  m_Name: EnermyShipActor
+  m_Name: AllyShipActor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -62,7 +63,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &114089933019522494
+--- !u!114 &114262195443510250
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -70,14 +71,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1738052388187252}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1484ddda4f7e88545a9e28e6115e6fec, type: 3}
+  m_Script: {fileID: 11500000, guid: e5f40e343c21f2247ad7855b60cc5e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  xDirection: 0
-  decisionIntervel: 1
   _decisionOptions: []
-  killDecisionLoop: 0
   controler: {fileID: 0}
+  decisionLoop: {fileID: 114910246699376380}
+  xDirection: 0
 --- !u!114 &114538197951726434
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -93,3 +93,26 @@ MonoBehaviour:
   Force: 5
   dragAmount: 1
   topSpeed: {x: 2, y: 0.75}
+--- !u!114 &114910246699376380
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1738052388187252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e762c75dca29de540a33bda111991fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killDecisionLoop: 0
+  _onTick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  _onStart:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  tickIntervel: 5

@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class ControlerLink : MonoBehaviour {
 
-    public SpawnEnemy controler;
+    public ShipSpawner controler;
 }

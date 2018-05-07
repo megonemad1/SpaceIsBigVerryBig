@@ -1,9 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Linq;
 
-public class EnermyAI : ShipAi
+public class AllyAi : ShipAi
 {
     private void Awake()
     {

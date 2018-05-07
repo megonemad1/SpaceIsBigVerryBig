@@ -293,6 +293,7 @@ GameObject:
   m_Component:
   - component: {fileID: 845506131}
   - component: {fileID: 845506130}
+  - component: {fileID: 845506132}
   m_Layer: 0
   m_Name: EnemyControler
   m_TagString: Untagged
@@ -311,16 +312,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9f2a4a0bbf2a77418048645c99b2ec8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EnermyActorPrefab: {fileID: 1738052388187252, guid: 77877da1004834940ba23f45ee49a75e,
-    type: 2}
-  EnermySpritePrefab: {fileID: 1946105270454246, guid: a5c4dc3920a3f884fa938ff518766443,
-    type: 2}
-  options:
-  - {fileID: 11400000, guid: ea46489db84e63649ba9b50baae2bbed, type: 2}
-  - {fileID: 11400000, guid: 8519437575043844e8cb2ba342805354, type: 2}
-  - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
-  - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
-  - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
+  ships:
+  - {fileID: 11400000, guid: 76d9c080bd15d754394de5280a82d7dd, type: 2}
   DecisionsPerShip: 5
   SpawnTickIntervel: 5
   seed:
@@ -334,6 +327,7 @@ MonoBehaviour:
   killSpawnLoop: 0
   left: 9
   right: 9
+  _SpawnTick: {fileID: 845506132}
 --- !u!4 &845506131
 Transform:
   m_ObjectHideFlags: 0
@@ -347,6 +341,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &845506132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 845506129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e762c75dca29de540a33bda111991fbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  killDecisionLoop: 0
+  _onTick:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  _onStart:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!4 &920358702 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4809765765943594, guid: cbe44174068a7db42a431fa5cfeb1053,
