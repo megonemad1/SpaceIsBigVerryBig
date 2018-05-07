@@ -168,7 +168,7 @@ MonoBehaviour:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  _template: {fileID: 11400000, guid: 58cd02401fc300e42ac594dfe084791b, type: 2}
+  _template: {fileID: 11400000, guid: fd7cbe9b6ce942a4e9f2c9ac9eba38da, type: 2}
 --- !u!114 &114495530350708254
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -202,7 +202,7 @@ MonoBehaviour:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  _template: {fileID: 11400000, guid: 5c8682585782de64a874463ad35ee704, type: 2}
+  _template: {fileID: 11400000, guid: e61aac97d8ff1274793bf86e72046443, type: 2}
 --- !u!114 &114833833708495112
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -236,7 +236,7 @@ MonoBehaviour:
         m_Calls: []
       m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
-  _template: {fileID: 11400000, guid: 97bd95e587268b84797b9a7dd38d266e, type: 2}
+  _template: {fileID: 11400000, guid: 65a382c73ac98e947abf753d609838cc, type: 2}
 --- !u!212 &212123608603332724
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -271,7 +271,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -361,7 +361,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

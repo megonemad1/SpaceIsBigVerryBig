@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ed6aa5c37077494fbb5c685c212a5b8, type: 3}
-  m_Name: AllyDeck 1
+  m_Name: EnermyDeck
   m_EditorClassIdentifier: 
   Layout: {fileID: 2800000, guid: 25459fab4f21ddb46adb6ecef1f26579, type: 3}
   Rules:
@@ -30,6 +30,4 @@ MonoBehaviour:
     enabled: 1
   isMirroredY: 1
   isMirroredX: 1
-  filters:
-  - {fileID: 11400000, guid: d39b9f1e9d7dbea4fb7109056c39fa84, type: 2}
-  - {fileID: 11400000, guid: 97b00aa16d331c34eba24bae167c612f, type: 2}
+  filters: []

@@ -27,7 +27,4 @@ MonoBehaviour:
     enabled: 1
   isMirroredY: 1
   isMirroredX: 0
-  filters:
-  - {fileID: 11400000, guid: d39b9f1e9d7dbea4fb7109056c39fa84, type: 2}
-  - {fileID: 11400000, guid: 97b00aa16d331c34eba24bae167c612f, type: 2}
-  - {fileID: 11400000, guid: 97b00aa16d331c34eba24bae167c612f, type: 2}
+  filters: []

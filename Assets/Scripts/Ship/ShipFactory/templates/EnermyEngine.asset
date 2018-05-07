@@ -9,9 +9,9 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ed6aa5c37077494fbb5c685c212a5b8, type: 3}
-  m_Name: AllyEngine
+  m_Name: EnermyEngine
   m_EditorClassIdentifier: 
-  Layout: {fileID: 2800000, guid: 701ad328a93a53643b6935113a6f88d1, type: 3}
+  Layout: {fileID: 2800000, guid: 30901ba67bf01df4e9c4bdb2237a785a, type: 3}
   Rules:
   - ColorKey: {r: 1, g: 1, b: 1, a: 1}
     rule: {fileID: 11400000, guid: 39c8426db1aab9a4386c367fbcb9e7c8, type: 2}
@@ -20,13 +20,11 @@ MonoBehaviour:
     rule: {fileID: 11400000, guid: a9cefdb2646d5894d81156f730ed5a6b, type: 2}
     enabled: 1
   - ColorKey: {r: 0.92941177, g: 0.10980392, b: 0.14117648, a: 1}
-    rule: {fileID: 11400000, guid: ceb4a9f296d91754ebd69dc75567468f, type: 2}
+    rule: {fileID: 11400000, guid: c784468eea10e6e47b288ce447e91555, type: 2}
     enabled: 1
-  - ColorKey: {r: 0.13333334, g: 0.69411767, b: 0.29803923, a: 1}
+  - ColorKey: {r: 1, g: 0.49803922, b: 0.15294118, a: 1}
     rule: {fileID: 11400000, guid: 8178698467c9e2c4dafd775028fbb31d, type: 2}
     enabled: 1
   isMirroredY: 1
   isMirroredX: 0
-  filters:
-  - {fileID: 11400000, guid: d39b9f1e9d7dbea4fb7109056c39fa84, type: 2}
-  - {fileID: 11400000, guid: 97b00aa16d331c34eba24bae167c612f, type: 2}
+  filters: []

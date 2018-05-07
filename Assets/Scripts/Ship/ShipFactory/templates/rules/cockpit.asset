@@ -16,11 +16,3 @@ MonoBehaviour:
     color: {r: 0.39489147, g: 0.9622642, b: 0.7781222, a: 1}
     rule: {fileID: 0}
     probability: 1
-  - isRefrence: 0
-    color: {r: 0.17421682, g: 0.8207547, b: 0.609732, a: 1}
-    rule: {fileID: 0}
-    probability: 1
-  - isRefrence: 0
-    color: {r: 0.3023318, g: 0.8113208, b: 0.64519244, a: 1}
-    rule: {fileID: 0}
-    probability: 1

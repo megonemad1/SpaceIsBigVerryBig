@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _set:
   - {fileID: 11400000, guid: 7ccbaef4aae69cd4389a11b09eaa43da, type: 2}
-  getCurrentDificultyModifyer: 2
+  getCurrentDificultyModifyer: 1

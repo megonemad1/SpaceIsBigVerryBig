@@ -314,6 +314,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ships:
   - {fileID: 11400000, guid: 76d9c080bd15d754394de5280a82d7dd, type: 2}
+  - {fileID: 11400000, guid: dfd24e392f8deb04d9bead7ff01f6e29, type: 2}
   DecisionsPerShip: 5
   SpawnTickIntervel: 5
   seed:
@@ -335,7 +336,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 845506129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 8, z: 0}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -363,6 +364,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  tickIntervel: 1
 --- !u!4 &920358702 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4809765765943594, guid: cbe44174068a7db42a431fa5cfeb1053,
