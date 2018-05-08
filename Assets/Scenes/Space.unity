@@ -295,7 +295,18 @@ MonoBehaviour:
   maxHeath: 100
   onDamageTaken:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 756929006}
+        m_MethodName: UpdateHealth
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityHealthEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   onDeath:
@@ -521,6 +532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 756929005}
   - component: {fileID: 756929004}
+  - component: {fileID: 756929006}
   m_Layer: 0
   m_Name: HelthBar
   m_TagString: Untagged
@@ -547,7 +559,7 @@ MonoBehaviour:
   backColorVarence: {x: 1, y: 1.1, z: 1.1}
   frontColor: {r: 0.7, g: 0.3, b: 0.3, a: 1}
   canvas: {fileID: 1757227205}
-  size: {x: 4, y: 4, z: 1}
+  size: {x: 2, y: 2, z: 1}
   barOffset: {x: 0, y: 0, z: 0}
 --- !u!4 &756929005
 Transform:
@@ -556,12 +568,24 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 756929003}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1157.2109, y: 429.11697, z: -3.7815452}
+  m_LocalPosition: {x: 1157.2109, y: 429.78, z: -3.7815452}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &756929006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 756929003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55274d00bf9392c48afbe255bf2cb5a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthBar: {fileID: 0}
 --- !u!1 &884060122
 GameObject:
   m_ObjectHideFlags: 0
