@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Name: AllyShip
   m_EditorClassIdentifier: 
   Actor: {fileID: 1738052388187252, guid: 7c1c39e35f8c55f4e82762e41e6d9452, type: 2}
-  Representaion: {fileID: 1946105270454246, guid: 766efae08ba203b479772ac3355e8f04,
+  Representaion: {fileID: 1946105270454246, guid: a322f40d9c91993438a14d546e9e7fc7,
     type: 2}
   options:
   - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
   - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
-  - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
-  - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
   - {fileID: 11400000, guid: ea46489db84e63649ba9b50baae2bbed, type: 2}
   - {fileID: 11400000, guid: 8519437575043844e8cb2ba342805354, type: 2}
+  - {fileID: 11400000, guid: a43d258907aa8af43ac19ab03ec65679, type: 2}
   spawnChance: {fileID: 11400000, guid: 7ccbaef4aae69cd4389a11b09eaa43da, type: 2}

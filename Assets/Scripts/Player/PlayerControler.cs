@@ -7,6 +7,8 @@ public class PlayerControler : MonoBehaviour
     [SerializeField]
     MovemonetHarness mover;
     [SerializeField]
+    AttackHandeler attacker;
+    [SerializeField]
     bool useSelf = true;
     public Vector2 PlayerDirectionImput;
     private void Awake()
@@ -18,6 +20,7 @@ public class PlayerControler : MonoBehaviour
         if (useSelf)
         {
             mover = GetComponent<MovemonetHarness>();
+            attacker = GetComponent<AttackHandeler>(); 
         }
 
     }
@@ -31,6 +34,11 @@ public class PlayerControler : MonoBehaviour
         PlayerDirectionImput.x = Input.GetAxisRaw("Horizontal");
 
         PlayerDirectionImput.y = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            attacker.Fire();
+        }
     }
 }
 

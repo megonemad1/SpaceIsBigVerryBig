@@ -17,8 +17,8 @@ MonoBehaviour:
   options:
   - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
   - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
-  - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
-  - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
   - {fileID: 11400000, guid: ea46489db84e63649ba9b50baae2bbed, type: 2}
   - {fileID: 11400000, guid: 8519437575043844e8cb2ba342805354, type: 2}
+  - {fileID: 11400000, guid: a43d258907aa8af43ac19ab03ec65679, type: 2}
+  - {fileID: 11400000, guid: a43d258907aa8af43ac19ab03ec65679, type: 2}
   spawnChance: {fileID: 11400000, guid: 7ccbaef4aae69cd4389a11b09eaa43da, type: 2}

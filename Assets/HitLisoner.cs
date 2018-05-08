@@ -3,9 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-internal class HitLisoner:MonoBehaviour
+public class HitLisoner:MonoBehaviour
 {
-    public virtual IEnumerator hit( Collider2D collision)
+    public virtual IEnumerator hit( Collider2D collision, BulletHandeler bullet)
     {
         yield break;
     }

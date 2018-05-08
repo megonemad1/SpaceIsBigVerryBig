@@ -46,10 +46,16 @@ public class ShipAi: MonoBehaviour
     private IEnumerator killAfter(float after)
     {
         yield return new WaitForSeconds(after);
-        decisionLoop.killDecisionLoop = true;
-        Destroy(this.gameObject);
+        SelfDestruct();
 
     }
+
+    public void SelfDestruct()
+    {
+        decisionLoop.killDecisionLoop = true;
+        Destroy(this.gameObject);
+    }
+
     private void FixedUpdate()
     {
         if (!mover)

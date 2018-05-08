@@ -29,8 +29,16 @@ public class ScriptableShipType : ScriptableObject
             ai.addDecision(ai.R.Pick(options));
         }
         ai.decisionLoop.StartLoop();
-        Instantiate(Representaion, newEnermy.transform).GetComponentsInChildren<ShipTextureCreator>().ToList().ForEach(a => a.setSeed(ai.R.valueInt));
-        newEnermy.transform.Rotate(0, 0, 180);
+        var repr = Instantiate(Representaion, newEnermy.transform);
+        var parts = repr.GetComponentsInChildren<ShipTextureCreator>();
+        Debug.Log(parts.Length);
+        foreach (var a in parts)
+        {
+
+            var repr_seed = ai.R.valueInt;
+            a.setSeed(repr_seed);
+            Debug.Log("seed: " + repr_seed, a);
+        }
         ai.controler = Controler;
         return newEnermy;
     }

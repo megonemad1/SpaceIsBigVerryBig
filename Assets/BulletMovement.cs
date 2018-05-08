@@ -6,11 +6,11 @@ public class BulletMovement : MonoBehaviour
 {
     [SerializeField]
     float speed;
-
+    BulletHandeler bullet;
     // Use this for initialization
     void Awake()
     {
-        
+        bullet = GetComponent<BulletHandeler>();
     }
 
     // Update is called once per frame
@@ -28,7 +28,10 @@ public class BulletMovement : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collision.GetComponents<HitLisoner>().ToList().ForEach(l => StartCoroutine(l.hit(collision)));
-        Destroy(gameObject);
+        bullet.hit(collision);
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        bullet.hit(collision.collider);
     }
 }
