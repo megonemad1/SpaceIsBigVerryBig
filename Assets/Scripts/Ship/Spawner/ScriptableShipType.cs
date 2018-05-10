@@ -14,6 +14,8 @@ public class ScriptableShipType : ScriptableObject
     ScriptableDecisionOption[] options;
     [SerializeField]
     public DificultyEnumm spawnChance;
+    [SerializeField]
+    List<int> explosions;
 
     public GameObject Spawn(RandomInitable seed, int Decisions, Vector3 pos, ShipSpawner Controler)
     {
@@ -30,6 +32,7 @@ public class ScriptableShipType : ScriptableObject
         }
         ai.decisionLoop.StartLoop();
         var repr = Instantiate(Representaion, newEnermy.transform);
+        repr.name = repr.name.Replace("(Clone)", "");
         var parts = repr.GetComponentsInChildren<ShipTextureCreator>();
         Debug.Log(parts.Length);
         foreach (var a in parts)
@@ -40,6 +43,8 @@ public class ScriptableShipType : ScriptableObject
             Debug.Log("seed: " + repr_seed, a);
         }
         ai.controler = Controler;
+        var destroyer = newEnermy.GetComponent<DestroyOnAnimationExit>();
+        destroyer.animationIndex = ai.R.Pick(explosions);
         return newEnermy;
     }
 }
