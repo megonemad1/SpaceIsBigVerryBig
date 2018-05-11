@@ -5,8 +5,4 @@ using System.Linq;
 
 public class EnermyAI : ShipAi
 {
-    private void Awake()
-    {
-        Init();
-    }
 }

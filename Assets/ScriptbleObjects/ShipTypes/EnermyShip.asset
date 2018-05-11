@@ -22,4 +22,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a43d258907aa8af43ac19ab03ec65679, type: 2}
   - {fileID: 11400000, guid: a43d258907aa8af43ac19ab03ec65679, type: 2}
   spawnChance: {fileID: 11400000, guid: 7ccbaef4aae69cd4389a11b09eaa43da, type: 2}
-  explosions: 01000000020000000300000004000000
+  explosions: 010000000300000004000000
+  ScoreValue: 10

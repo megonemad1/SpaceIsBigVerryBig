@@ -17,13 +17,19 @@ public class ShipAi: MonoBehaviour
     [SerializeField]
     public float xDirection;
     public Action onFixedUpdate = () => { };
+    [SerializeField]
+    public int ScoreValue;
 
-    protected void Init()
+    protected void Awake()
     {
         decisionLoop.onTick += Tick;
         mover = GetComponent<MovemonetHarness>();
     }
 
+    public void AddToScore(PlayerScriptableObject player)
+    {
+        player.score += ScoreValue;
+    }
    
     public void Tick()
     {

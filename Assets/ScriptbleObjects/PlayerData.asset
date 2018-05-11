@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ccfb841f48a454d9d8f504a155a9c5, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  score: 0
+  deck_seed: fa
+  engine_seed: w2af
+  cabin_seed: af
+  Seal:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: ce0b099026d88a440af57b33bcef32fe, type: 2}
+        m_MethodName: updateProjectedScore
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: SealFinalScore, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null

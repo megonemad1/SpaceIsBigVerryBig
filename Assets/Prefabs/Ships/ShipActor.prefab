@@ -37,13 +37,13 @@ GameObject:
   - component: {fileID: 114538197951726434}
   - component: {fileID: 50373160267988496}
   - component: {fileID: 114910246699376380}
-  - component: {fileID: 114262195443510250}
   - component: {fileID: 114688889424334744}
   - component: {fileID: 114540598692960004}
   - component: {fileID: 70769131552291842}
   - component: {fileID: 95941939116582050}
   - component: {fileID: 114806482589790924}
   - component: {fileID: 212171705091794448}
+  - component: {fileID: 114664022029966306}
   m_Layer: 0
   m_Name: ShipActor
   m_TagString: Untagged
@@ -131,21 +131,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &114262195443510250
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1738052388187252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5f40e343c21f2247ad7855b60cc5e64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _decisionOptions: []
-  controler: {fileID: 0}
-  decisionLoop: {fileID: 114910246699376380}
-  xDirection: 0
 --- !u!114 &114538197951726434
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -179,6 +164,22 @@ MonoBehaviour:
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   currentAmmo: {fileID: 11400000, guid: c9c9c3ee25b49b74094c3e08f1c46f66, type: 2}
+--- !u!114 &114664022029966306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1738052388187252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5798f3ae965c17448f04443abc67d32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _decisionOptions: []
+  controler: {fileID: 0}
+  decisionLoop: {fileID: 114910246699376380}
+  xDirection: 0
+  ScoreValue: 0
 --- !u!114 &114688889424334744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -217,6 +218,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114664022029966306}
+        m_MethodName: AddToScore
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: be699621cd06a6141813a3c2ebde7e87,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: PlayerScriptableObject, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

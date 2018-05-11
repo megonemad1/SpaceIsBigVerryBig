@@ -30,8 +30,8 @@ public class DestroyOnAnimationExit : MonoBehaviour
     }
     void DestroyObjectChildren()
     {
-        foreach (var g in transform.GetComponentsInChildren<Transform>())
-            Destroy(g.gameObject);
+        foreach (Transform c in transform)
+            Destroy(c.gameObject);
 
     }
 }

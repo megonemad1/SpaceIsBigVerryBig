@@ -4,8 +4,5 @@ using UnityEngine;
 
 public class AllyAi : ShipAi
 {
-    private void Awake()
-    {
-        Init();
-    }
+   
 }

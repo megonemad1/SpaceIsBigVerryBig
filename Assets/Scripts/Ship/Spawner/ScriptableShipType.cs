@@ -16,6 +16,8 @@ public class ScriptableShipType : ScriptableObject
     public DificultyEnumm spawnChance;
     [SerializeField]
     List<int> explosions;
+    [SerializeField]
+    public int ScoreValue;
 
     public GameObject Spawn(RandomInitable seed, int Decisions, Vector3 pos, ShipSpawner Controler)
     {
@@ -43,6 +45,7 @@ public class ScriptableShipType : ScriptableObject
             Debug.Log("seed: " + repr_seed, a);
         }
         ai.controler = Controler;
+        ai.ScoreValue = ScoreValue;
         var destroyer = newEnermy.GetComponent<DestroyOnAnimationExit>();
         destroyer.animationIndex = ai.R.Pick(explosions);
         return newEnermy;

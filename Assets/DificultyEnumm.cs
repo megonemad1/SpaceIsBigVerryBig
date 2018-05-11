@@ -8,6 +8,6 @@ public class DificultyEnumm : ScriptableObject
     float cr;
     public float getCr()
     {
-        return cr*DificultyManager.Instance.getCurrentDificultyModifyer;
+        return cr*DificultyManager.Instance.currentDificultyModifyer;
     }
 }
