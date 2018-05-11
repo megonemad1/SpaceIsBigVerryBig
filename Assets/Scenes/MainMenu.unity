@@ -188,7 +188,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114022852}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 9ebaef27833438c40945b56eb891e7b4, type: 2}
+        m_MethodName: ChangeScene
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: e07f9bdfdf153e84896c812dfee3a19d,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: SceenWrapper, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &114022852
@@ -1140,9 +1152,9 @@ MonoBehaviour:
         m_MethodName: ChangeScene
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: 71b73915ad253d947967a773efb81902,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: 2c17f15770fad7443a211901f28080af,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: SceenWrapper, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

@@ -8,9 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68e03334b8073284596d27f5ed1ad16a, type: 3}
-  m_Name: DificultyManager
+  m_Script: {fileID: 11500000, guid: 01da91c6e3be5b24f98759e0b731eb4c, type: 3}
+  m_Name: PlayerSelect
   m_EditorClassIdentifier: 
-  currentDificultyModifyer: 0.016261326
-  movingAvrCount: 10
-  movingAvr: 90010000900100009001000090010000fa0000003601000028000000e2ffffff9a010000d0020000
+  scene: {fileID: 102900000, guid: 4a0fcc6626b85c04183e0a07ed14db09, type: 3}
+  sceneName: PlayerSelect

@@ -17,7 +17,7 @@ public class CoroutineLoop : MonoBehaviour
     [SerializeField]
     UnityEvent _onStart;
     [SerializeField]
-    int tickIntervel;
+    float tickIntervel;
     private bool start;
 
     private void Start()

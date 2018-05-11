@@ -6,11 +6,18 @@ using UnityEngine.SceneManagement;
 [CreateAssetMenu]
 public class SceenChanger : ScriptableObject
 {
-    public void ChangeScene(Object Scene, bool additive)
+    static Dictionary<SceenWrapper, string> cache = new Dictionary<SceenWrapper, string>();
+    public void ChangeScene(SceenWrapper Scene, bool additive)
     {
-        SceneManager.LoadScene(Scene.name, additive ? LoadSceneMode.Additive : LoadSceneMode.Single);
+        if (cache.ContainsKey(Scene))
+            SceneManager.LoadScene(cache[Scene], additive ? LoadSceneMode.Additive : LoadSceneMode.Single);
+        else
+        {
+            cache.Add(Scene, Scene.sceneName);
+            SceneManager.LoadScene(Scene.sceneName, additive ? LoadSceneMode.Additive : LoadSceneMode.Single);
+        }
     }
-    public void ChangeScene(Object Scene)
+    public void ChangeScene(SceenWrapper Scene)
     {
         ChangeScene(Scene, false);
     }

@@ -9,6 +9,8 @@ public class PlayerControler : MonoBehaviour
     [SerializeField]
     AttackHandeler attacker;
     [SerializeField]
+    PauseHandeler pauseHandeler;
+    [SerializeField]
     bool useSelf = true;
     public Vector2 PlayerDirectionImput;
     private void Awake()
@@ -35,9 +37,13 @@ public class PlayerControler : MonoBehaviour
 
         PlayerDirectionImput.y = Input.GetAxisRaw("Vertical");
 
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Jump"))
         {
             attacker.Fire();
+        }
+        if (Input.GetButtonDown("Cancel"))
+        {
+            pauseHandeler.TogglePause();
         }
     }
 }

@@ -21,8 +21,8 @@ public class ShipSpawner : MonoBehaviour
     float left, right;
     [SerializeField]
     CoroutineLoop _SpawnTick;
-
-
+    [SerializeField]
+    public Camera cam;
 
     private void OnValidate()
     {

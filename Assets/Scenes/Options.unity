@@ -513,9 +513,9 @@ MonoBehaviour:
         m_MethodName: ChangeScene
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 102900000, guid: 78d7ca3134981b842b16e7fd9fa4cfaf,
-            type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 11400000, guid: a61122afa1d0fe746b7e86b85bfded2c,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: SceenWrapper, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

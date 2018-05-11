@@ -8,9 +8,15 @@ public class formatText : MonoBehaviour {
     [SerializeField]
     PlayerScriptableObject value;
     Text t;
+    string tvalue;
     private void Awake()
     {
         t = GetComponent<Text>();
-        t.text = string.Format(t.text, value.score.ToString());
+        tvalue = t.text;
+    }
+
+    public void Update()
+    {
+        t.text = string.Format(tvalue, value.score.ToString());
     }
 }
