@@ -7,6 +7,8 @@ public class ScriptableAmmoType : ScriptableObject
     static GameObject BulletFolder;
     [SerializeField]
     GameObject ammoPrefab;
+    [SerializeField]
+    ScriptableDamageType dt;
     internal void Spawn(GameObject gameObject, Vector3 SpawnLocation)
     {
         if (BulletFolder == null)
@@ -19,7 +21,10 @@ public class ScriptableAmmoType : ScriptableObject
         bullet.transform.position = SpawnLocation;
         BulletHandeler bh = bullet.GetComponent<BulletHandeler>();
         if (bh != null)
+        {
             bh.sender = gameObject;
+            bh.damageType = dt;
+        }
 
     }
 }

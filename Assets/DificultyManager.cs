@@ -45,8 +45,8 @@ internal class DificultyManager : ScriptableObject
         while (movingAvr.Count > movingAvrCount)
             movingAvr.RemoveAt(0);
         var percentChange = currentDificultyModifyer * (diffrenceMean + 1);
-       // y = (2 / PI) * arctan(100 * x) + 1
-        currentDificultyModifyer = 2 -(2f / UnityEngine.Mathf.PI * UnityEngine.Mathf.Atan(10 * percentChange) +1);        
+        // y = (2 / PI) * arctan(100 * x) + 1
+        currentDificultyModifyer = Mathf.Lerp(currentDificultyModifyer, currentDificultyModifyer * percentChange, 1f / movingAvrCount);    
     }
     public void setDificulty(float dificulty)
     {

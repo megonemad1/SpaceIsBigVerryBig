@@ -69,6 +69,7 @@ MonoBehaviour:
   left: 9
   right: 9
   _SpawnTick: {fileID: 114727473005774194}
+  cam: {fileID: 0}
 --- !u!114 &114727473005774194
 MonoBehaviour:
   m_ObjectHideFlags: 1

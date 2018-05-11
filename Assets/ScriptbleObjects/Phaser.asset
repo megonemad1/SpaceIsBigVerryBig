@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: Phaser
   m_EditorClassIdentifier: 
   magnitude: 34
+  dificultyDirection: 1
