@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Name: Photon Cannon
   m_EditorClassIdentifier: 
   ammoPrefab: {fileID: 1701630164721982, guid: 119b20f5032a57e4788a7fb4a58398f7, type: 2}
+  dt: {fileID: 11400000, guid: ba9cb6f7e38fed54793385dbe332649d, type: 2}

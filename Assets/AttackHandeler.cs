@@ -25,7 +25,10 @@ public class AttackHandeler : MonoBehaviour
     }
     public void Fire(ScriptableAmmoType ammo)
     {
-        ammo.Spawn(gameObject, spawnPoint.transform.position);
-        onFire.Invoke();
+        if (spawnPoint && gameObject)
+        {
+            ammo.Spawn(gameObject, spawnPoint.transform.position);
+            onFire.Invoke();
+        }
     }
 }

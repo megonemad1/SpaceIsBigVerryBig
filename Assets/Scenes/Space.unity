@@ -163,6 +163,7 @@ MonoBehaviour:
   pauseHandeler: {fileID: 715660766}
   useSelf: 1
   PlayerDirectionImput: {x: 0, y: 0}
+  playerdata: {fileID: 11400000, guid: be699621cd06a6141813a3c2ebde7e87, type: 2}
 --- !u!114 &418710370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,7 +227,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  currentAmmo: {fileID: 11400000, guid: c9c9c3ee25b49b74094c3e08f1c46f66, type: 2}
+  currentAmmo: {fileID: 11400000, guid: 3aed454178ab75a4fad38c54d725519f, type: 2}
 --- !u!50 &418710373
 Rigidbody2D:
   serializedVersion: 4
@@ -2452,15 +2453,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 1836616162938892, guid: d8141fa762ca62e40bee39a6273acaec, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 114519787200786432, guid: d8141fa762ca62e40bee39a6273acaec,
         type: 2}
       propertyPath: cam
       value: 
       objectReference: {fileID: 950141095}
+    - target: {fileID: 114727473005774194, guid: d8141fa762ca62e40bee39a6273acaec,
+        type: 2}
+      propertyPath: tickIntervel
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d8141fa762ca62e40bee39a6273acaec, type: 2}
   m_IsPrefabParent: 0

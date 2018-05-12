@@ -9,6 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7119ecf85807c148a40b6609150deb5, type: 3}
-  m_Name: Photon Cannon
+  m_Name: Player Photon
   m_EditorClassIdentifier: 
   ammoPrefab: {fileID: 1701630164721982, guid: 119b20f5032a57e4788a7fb4a58398f7, type: 2}
+  dt: {fileID: 11400000, guid: 6cdebcf1349694c4da07cef8d56581e8, type: 2}

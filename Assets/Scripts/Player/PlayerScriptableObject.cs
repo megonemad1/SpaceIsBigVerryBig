@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu]
 public class PlayerScriptableObject : ScriptableObject {
 
-
+    public GameObject player;
     public int score;
     public string deck_seed;
     public string engine_seed;

@@ -17,7 +17,7 @@ public class ShipCollision : MonoBehaviour
         var other = collision.gameObject.GetComponent<HealthHandeler>();
 
         if (other != null)
-            other.DealDamage(damageType);
+            other.DealDamage(damageType, this.gameObject);
         Colliding.Invoke();
 
     }
@@ -27,7 +27,7 @@ public class ShipCollision : MonoBehaviour
         var other = collision.gameObject.GetComponent<HealthHandeler>();
 
         if (other != null)
-            other.DealDamage(damageType);
+            other.DealDamage(damageType, this.gameObject);
         Colliding.Invoke();
 
     }

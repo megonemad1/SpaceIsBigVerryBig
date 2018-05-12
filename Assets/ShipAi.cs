@@ -4,12 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class ShipAi: MonoBehaviour
+public class ShipAi : MonoBehaviour
 {
     [SerializeField]
     protected List<ScriptableDecisionOption> _decisionOptions = new List<ScriptableDecisionOption>();
     protected Stack<ScriptableDecisionOption> decisionOptions = new Stack<ScriptableDecisionOption>();
     public RandomInitable R;
+    [SerializeField]
     public ShipSpawner controler;
     [SerializeField]
     public CoroutineLoop decisionLoop;
@@ -19,6 +20,8 @@ public class ShipAi: MonoBehaviour
     public Action onFixedUpdate = () => { };
     [SerializeField]
     public int ScoreValue;
+    [SerializeField]
+    PlayerScriptableObject player;
 
     protected void Awake()
     {
@@ -26,11 +29,12 @@ public class ShipAi: MonoBehaviour
         mover = GetComponent<MovemonetHarness>();
     }
 
-    public void AddToScore(PlayerScriptableObject player)
+    public void AddToScore(HealthArgs args)
     {
-        player.score += ScoreValue;
+        if (args.cause == player.player)
+            player.score += ScoreValue;
     }
-   
+
     public void Tick()
     {
         if (decisionOptions != null && decisionOptions.Count > 0)

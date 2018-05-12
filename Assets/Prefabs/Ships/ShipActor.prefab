@@ -395,6 +395,7 @@ MonoBehaviour:
   decisionLoop: {fileID: 114910246699376380}
   xDirection: 0
   ScoreValue: 0
+  player: {fileID: 11400000, guid: be699621cd06a6141813a3c2ebde7e87, type: 2}
 --- !u!114 &114688889424334744
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -440,11 +441,10 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 114664022029966306}
         m_MethodName: AddToScore
-        m_Mode: 2
+        m_Mode: 0
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: be699621cd06a6141813a3c2ebde7e87,
-            type: 2}
-          m_ObjectArgumentAssemblyTypeName: PlayerScriptableObject, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

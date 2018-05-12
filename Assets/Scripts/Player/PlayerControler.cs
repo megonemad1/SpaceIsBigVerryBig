@@ -13,9 +13,12 @@ public class PlayerControler : MonoBehaviour
     [SerializeField]
     bool useSelf = true;
     public Vector2 PlayerDirectionImput;
+    [SerializeField]
+    PlayerScriptableObject playerdata;
     private void Awake()
     {
         PlayerDirectionImput = new Vector2();
+        playerdata.player = this.gameObject;
     }
     private void OnValidate()
     {

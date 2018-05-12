@@ -49,7 +49,7 @@ public class ShipSpawner : MonoBehaviour
         Debug.Log("spawning ship id: " + seed);
         RandomInitable ship_R = new RandomInitable(seed);
         ScriptableShipType shipToSpawn = ship_R.Pick(ships);
-        if (shipToSpawn.spawnChance.getCr() >= r.value)
+        if (shipToSpawn.spawnChance.getCr() >= ship_R.value)
         {
             Vector3 newPos = Vector3.right * ship_R.Range(-left, right) + this.transform.position;
             shipToSpawn.Spawn(ship_R, DecisionsPerShip, newPos, this);
