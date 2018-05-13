@@ -15,6 +15,15 @@ public class HealthHandeler : HitLisoner
     UnityHealthEvent onDamageTaken;
     [SerializeField]
     UnityHealthEvent onDeath;
+    [SerializeField]
+    PlayerScriptableObject playerdata;
+
+    private void Awake()
+    {
+        if (playerdata)
+            maxHeath *= playerdata.HealthModifyer*2 + 0.5f;
+        health = maxHeath;
+    }
 
     public override IEnumerator hit(Collider2D collision, BulletHandeler bullet)
     {
@@ -24,12 +33,18 @@ public class HealthHandeler : HitLisoner
 
     public void DealDamage(ScriptableDamageType damageType, GameObject sender)
     {
-        health -= damageType.Magnitude;
-        onDamageTaken.Invoke(new HealthArgs() { damage = damageType, handeler = this,  cause= sender });
+        PlayerControler player = sender.GetComponent<PlayerControler>();
+        if (player)
+            health -= (player.playerdata.AtackModifyer*2 + 0.5f) * damageType.Magnitude;
+        else
+            health -= damageType.Magnitude;
+
+
+        onDamageTaken.Invoke(new HealthArgs() { damage = damageType, handeler = this, cause = sender });
         if (health <= 0)
         {
             health = 0;
-            onDeath.Invoke(new HealthArgs() { damage = damageType, handeler = this, cause= sender });
+            onDeath.Invoke(new HealthArgs() { damage = damageType, handeler = this, cause = sender });
         }
     }
 }

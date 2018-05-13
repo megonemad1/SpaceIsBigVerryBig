@@ -24,3 +24,4 @@ MonoBehaviour:
   spawnChance: {fileID: 11400000, guid: 7ccbaef4aae69cd4389a11b09eaa43da, type: 2}
   explosions: 010000000300000004000000
   ScoreValue: 10
+  team: 1

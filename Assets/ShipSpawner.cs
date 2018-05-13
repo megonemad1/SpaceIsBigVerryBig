@@ -23,6 +23,9 @@ public class ShipSpawner : MonoBehaviour
     CoroutineLoop _SpawnTick;
     [SerializeField]
     public Camera cam;
+    [SerializeField]
+    GameObject Player;
+    
 
     private void OnValidate()
     {

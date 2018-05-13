@@ -11,10 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9ccfb841f48a454d9d8f504a155a9c5, type: 3}
   m_Name: PlayerData
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   score: 0
-  deck_seed: fa
-  engine_seed: w2af
-  cabin_seed: af
+  deck_seed: 
+  engine_seed: 
+  cabin_seed: 
   Seal:
     m_PersistentCalls:
       m_Calls:
@@ -31,3 +32,5 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: SealFinalScore, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  _seenInto: 0
+  stats: {x: 0.57735, y: 0.57735, z: 0.57735}

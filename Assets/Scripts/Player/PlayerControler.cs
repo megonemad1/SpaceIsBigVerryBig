@@ -14,7 +14,7 @@ public class PlayerControler : MonoBehaviour
     bool useSelf = true;
     public Vector2 PlayerDirectionImput;
     [SerializeField]
-    PlayerScriptableObject playerdata;
+    public PlayerScriptableObject playerdata;
     private void Awake()
     {
         PlayerDirectionImput = new Vector2();
@@ -41,6 +41,10 @@ public class PlayerControler : MonoBehaviour
         PlayerDirectionImput.y = Input.GetAxisRaw("Vertical");
 
         if (Input.GetButtonDown("Jump"))
+        {
+            attacker.ChargeUp();
+        }
+        if (Input.GetButtonUp("Jump"))
         {
             attacker.Fire();
         }

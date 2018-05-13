@@ -11,3 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897b74fb32117d945a60bd7a2ee0c63a, type: 3}
   m_Name: StandedAtack
   m_EditorClassIdentifier: 
+  FixedUpdateFramesChargedFor: 200

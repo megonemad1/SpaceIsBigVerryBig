@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f3d37d7f8371654ca9eb35ce8076a66, type: 3}
   m_Name: PlayerPhasor
   m_EditorClassIdentifier: 
-  magnitude: 34
+  magnitude: 20
   dificultyDirection: -1

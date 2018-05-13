@@ -13,6 +13,8 @@ public class MovemonetHarness : MonoBehaviour
     float dragAmount = 1;
     [SerializeField]
     Vector2 topSpeed = new Vector2(10, 10);
+    [SerializeField]
+    PlayerScriptableObject playerdata;
     //onlu global for memory management;
     private Vector2 newVelocity;
 
@@ -22,7 +24,13 @@ public class MovemonetHarness : MonoBehaviour
     void Awake()
     {
         if (!rbody)
-        rbody = this.GetComponent<Rigidbody2D>();
+            rbody = this.GetComponent<Rigidbody2D>();
+        if (playerdata)
+        {
+            Force *= 0.5f + playerdata.SpeedModifyer*2;
+            topSpeed.x *= 0.5f + playerdata.SpeedModifyer; 
+            topSpeed.y *= 0.5f + playerdata.SpeedModifyer; 
+        }
     }
 
     public void Move(Vector2 direction)
