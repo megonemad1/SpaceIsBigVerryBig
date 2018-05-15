@@ -20,6 +20,8 @@ public class ScriptableShipType : ScriptableObject
     public int ScoreValue;
     [SerializeField]
     int team;
+    [SerializeField]
+    ScriptableItemDrop[] items;
 
     public GameObject Spawn(RandomInitable seed, int Decisions, Vector3 pos, ShipSpawner Controler)
     {
@@ -38,20 +40,25 @@ public class ScriptableShipType : ScriptableObject
         var repr = Instantiate(Representaion, newEnermy.transform);
         repr.name = repr.name.Replace("(Clone)", "");
         var teemh = newEnermy.GetComponent<TeamHandeler>();
-        teemh.team = this.team; 
+        teemh.team = this.team;
         var parts = repr.GetComponentsInChildren<ShipTextureCreator>();
-        Debug.Log(parts.Length);
         foreach (var a in parts)
         {
 
             var repr_seed = ai.R.valueInt;
             a.setSeed(repr_seed);
-            Debug.Log("seed: " + repr_seed, a);
         }
         ai.controler = Controler;
         ai.ScoreValue = ScoreValue;
         var destroyer = newEnermy.GetComponent<DestroyOnAnimationExit>();
         destroyer.animationIndex = ai.R.Pick(explosions);
+        var dropHandeler = newEnermy.GetComponent<DropHandeler>();
+        var item = ai.R.Pick(items);
+        if (item.chalange.getCr() >= ai.R.value)
+        {
+            var a = ai.R.Pick(items);
+            dropHandeler._drop = a;
+        }
         return newEnermy;
     }
 }

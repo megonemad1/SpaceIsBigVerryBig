@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba4e95cfec2ec664f9b3f92c22f07cf7, type: 3}
+  m_Name: goodScoreDrop
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1131431159977432, guid: b4d5d6ff5f1c71740918545d73e63c22, type: 2}
+  chalange: {fileID: 11400000, guid: a5b47cf3af17b6e4cb6684ad159245fe, type: 2}

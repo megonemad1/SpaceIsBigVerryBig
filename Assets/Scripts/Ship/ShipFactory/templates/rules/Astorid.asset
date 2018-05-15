@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4581bb3616d55b4489d227239e10ad8, type: 3}
+  m_Name: Astorid
+  m_EditorClassIdentifier: 
+  _probablilitys:
+  - isRefrence: 0
+    color: {r: 0.3818085, g: 0.45199108, b: 0.5660378, a: 1}
+    rule: {fileID: 0}
+    probability: 1
+  - isRefrence: 0
+    color: {r: 0.22921859, g: 0.32718495, b: 0.4811321, a: 1}
+    rule: {fileID: 0}
+    probability: 1
+  - isRefrence: 0
+    color: {r: 0.65080994, g: 0.67917854, b: 0.7075472, a: 1}
+    rule: {fileID: 0}
+    probability: 1

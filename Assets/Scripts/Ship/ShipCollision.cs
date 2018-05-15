@@ -21,15 +21,6 @@ public class ShipCollision : MonoBehaviour
         Colliding.Invoke();
 
     }
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-
-        var other = collision.gameObject.GetComponent<HealthHandeler>();
-
-        if (other != null)
-            other.DealDamage(damageType, this.gameObject);
-        Colliding.Invoke();
-
-    }
+    
 
 }

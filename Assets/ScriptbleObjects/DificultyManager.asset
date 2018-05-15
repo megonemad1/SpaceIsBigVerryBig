@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68e03334b8073284596d27f5ed1ad16a, type: 3}
   m_Name: DificultyManager
   m_EditorClassIdentifier: 
-  currentDificultyModifyer: 0.8748951
+  currentDificultyModifyer: 1
   movingAvrCount: 10
-  movingAvr: 0500000023000000f0ffffff540000001600000003000000100000003100000095000000ffffffff
+  movingAvr: 00000000000000000000000000000000000000002e0000002f000000270000000400000014000000

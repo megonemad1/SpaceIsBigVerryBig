@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3887b0a1d9136ab49a6e94fe6799c2a2, type: 3}
+  m_Name: TrackList
+  m_EditorClassIdentifier: 
+  all:
+  - _name: Aggressor
+    audio: {fileID: 8300000, guid: bceea72915a3027478e494c23bea8785, type: 3}
+    unlocked: 0
+  - _name: Darkling
+    audio: {fileID: 8300000, guid: 38438738a17067041b93b532d8995c94, type: 3}
+    unlocked: 0
+  - _name: Death and Axes
+    audio: {fileID: 8300000, guid: 108da4f8d2d9cda4ab7e68f869179fc7, type: 3}
+    unlocked: 0
+  - _name: Hiding Your Reality
+    audio: {fileID: 8300000, guid: b22ccfb2496991d42b1ebf5e48b9d738, type: 3}
+    unlocked: 0
+  - _name: I Can Feel it Coming
+    audio: {fileID: 8300000, guid: ea92417b147a83240b758fa61dc1d317, type: 3}
+    unlocked: 1
+  - _name: Jazz Brunch
+    audio: {fileID: 8300000, guid: 48089c2408f1ff14393f2f5cbbc6cb45, type: 3}
+    unlocked: 1
+  - _name: Jet Fueled Vixen
+    audio: {fileID: 8300000, guid: a1f4cb99d7237764a89fcdbaa9302b16, type: 3}
+    unlocked: 0
+  - _name: Killers
+    audio: {fileID: 8300000, guid: 2a49336dc858cff49952293d246a129e, type: 3}
+    unlocked: 0
+  - _name: Mega Hyper Ultrastorm
+    audio: {fileID: 8300000, guid: 95dd4544e03f4e045a3e9c7490904dc5, type: 3}
+    unlocked: 0
+  - _name: Outfoxing the Fox
+    audio: {fileID: 8300000, guid: 0bc129b22d579e84c8005d44f2d1abbb, type: 3}
+    unlocked: 0
+  - _name: Bit Shift
+    audio: {fileID: 8300000, guid: 7fbdceb734c0997438846882a83f1648, type: 3}
+    unlocked: 0
+  - _name: Corruption
+    audio: {fileID: 8300000, guid: a36972eddce6e544783fd3c01c8ab83d, type: 3}
+    unlocked: 0
+  - _name: Crypto
+    audio: {fileID: 8300000, guid: 6354f85c99cbc9947a2107e3204d29d9, type: 3}
+    unlocked: 0
+  - _name: Curse of the Scarab
+    audio: {fileID: 8300000, guid: 3964f0555206b35488a527329278e1ad, type: 3}
+    unlocked: 0
+  - _name: Port Horizon
+    audio: {fileID: 8300000, guid: aea9f8fbec8394f4baf83a5eb918d8db, type: 3}
+    unlocked: 0
+  - _name: Super Power Cool Dude
+    audio: {fileID: 8300000, guid: b9ab20a7cebb4814cb175ffde7a21e51, type: 3}
+    unlocked: 0
+  seed: 0

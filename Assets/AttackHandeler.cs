@@ -39,6 +39,8 @@ public class AttackHandeler : MonoBehaviour
     private IEnumerator _ChargeUp()
     {
         onCharging.Invoke();
+        if (chargeSprite == null)
+            yield break;
         chargeSprite.gameObject.SetActive(true);
         yield return new WaitForSeconds(chargeTime);
         onCharged.Invoke();

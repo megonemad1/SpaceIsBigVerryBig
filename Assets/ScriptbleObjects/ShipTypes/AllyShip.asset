@@ -19,6 +19,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8519437575043844e8cb2ba342805354, type: 2}
   - {fileID: 11400000, guid: ea46489db84e63649ba9b50baae2bbed, type: 2}
   - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
-  spawnChance: {fileID: 11400000, guid: 7ccbaef4aae69cd4389a11b09eaa43da, type: 2}
+  spawnChance: {fileID: 11400000, guid: c290f98db6a3a3d4da14f6121a7ed754, type: 2}
   explosions: 010000000300000004000000
   ScoreValue: -10
+  team: 0
+  items:
+  - {fileID: 11400000, guid: 026268d62a12d2f4a9ea7e9f853ab525, type: 2}
+  - {fileID: 11400000, guid: 4789bf46f8ab5274bbac5f1755243ee8, type: 2}
+  - {fileID: 11400000, guid: 4789bf46f8ab5274bbac5f1755243ee8, type: 2}

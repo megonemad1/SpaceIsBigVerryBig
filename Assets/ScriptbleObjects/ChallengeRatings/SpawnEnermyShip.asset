@@ -11,5 +11,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb21d16e6fd9f31489f458ac7b99accd, type: 3}
   m_Name: SpawnEnermyShip
   m_EditorClassIdentifier: 
-  manager: {fileID: 11400000, guid: ce0b099026d88a440af57b33bcef32fe, type: 2}
-  cr: 0.5
+  cr: 0.55

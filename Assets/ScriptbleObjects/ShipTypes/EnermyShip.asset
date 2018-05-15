@@ -16,7 +16,6 @@ MonoBehaviour:
     type: 2}
   options:
   - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
-  - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
   - {fileID: 11400000, guid: ea46489db84e63649ba9b50baae2bbed, type: 2}
   - {fileID: 11400000, guid: 8519437575043844e8cb2ba342805354, type: 2}
   - {fileID: 11400000, guid: a43d258907aa8af43ac19ab03ec65679, type: 2}
@@ -25,3 +24,7 @@ MonoBehaviour:
   explosions: 010000000300000004000000
   ScoreValue: 10
   team: 1
+  items:
+  - {fileID: 11400000, guid: 22fdaa7ba09812443a4d9f469c6ce778, type: 2}
+  - {fileID: 11400000, guid: ac9a4a6ed1e0b7b4cbefb14e82980ae4, type: 2}
+  - {fileID: 11400000, guid: e51e3c3166e0de54da85cb96420d4eae, type: 2}

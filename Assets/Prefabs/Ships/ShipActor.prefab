@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 82672294462533954}
   - component: {fileID: 114904270847537918}
   - component: {fileID: 114394849407619120}
+  - component: {fileID: 114059724952389898}
   m_Layer: 0
   m_Name: ShipActor
   m_TagString: Untagged
@@ -721,6 +722,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114059724952389898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1738052388187252}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e5b0e7dc467104693fdef420e929da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _drop: {fileID: 0}
 --- !u!114 &114394849407619120
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -749,6 +762,11 @@ MonoBehaviour:
   dragAmount: 1
   topSpeed: {x: 2, y: 0.75}
   playerdata: {fileID: 0}
+  onDirectionChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEventFloat, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!114 &114540598692960004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -846,8 +864,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8cdaaa411b09d6746ae0cac5532689b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  maxHeath: 100
+  health: 50
+  maxHeath: 50
   onDamageTaken:
     m_PersistentCalls:
       m_Calls:
@@ -911,9 +929,44 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 70769131552291842}
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 114059724952389898}
+        m_MethodName: drop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 114688889424334744}
+        m_MethodName: set_isShielded
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityHealthEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   playerdata: {fileID: 0}
+  shield: {fileID: 0}
+  _isShielded: 0
 --- !u!114 &114718079086646798
 MonoBehaviour:
   m_ObjectHideFlags: 1

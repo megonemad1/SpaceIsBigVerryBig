@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2d81e0f57139747a1ac79067639cd3, type: 3}
+  m_Name: Astorid
+  m_EditorClassIdentifier: 
+  Actor: {fileID: 1738052388187252, guid: b14a6759a704ded4b8febcd1f46a4947, type: 2}
+  Representaion: {fileID: 1710347579796886, guid: 58ead36ef47e5e344ac5a84231c6dac4,
+    type: 2}
+  options:
+  - {fileID: 11400000, guid: e698520c62933b247ada7b697e832bc4, type: 2}
+  spawnChance: {fileID: 11400000, guid: 2066542cd6d617c45862803f20f57ccf, type: 2}
+  explosions: 010000000300000004000000
+  ScoreValue: 5
+  team: 1
+  items:
+  - {fileID: 11400000, guid: 22fdaa7ba09812443a4d9f469c6ce778, type: 2}
+  - {fileID: 11400000, guid: 026268d62a12d2f4a9ea7e9f853ab525, type: 2}
+  - {fileID: 11400000, guid: 4789bf46f8ab5274bbac5f1755243ee8, type: 2}
+  - {fileID: 11400000, guid: ac9a4a6ed1e0b7b4cbefb14e82980ae4, type: 2}
+  - {fileID: 11400000, guid: ac9a4a6ed1e0b7b4cbefb14e82980ae4, type: 2}
+  - {fileID: 11400000, guid: ac9a4a6ed1e0b7b4cbefb14e82980ae4, type: 2}
+  - {fileID: 11400000, guid: ac9a4a6ed1e0b7b4cbefb14e82980ae4, type: 2}

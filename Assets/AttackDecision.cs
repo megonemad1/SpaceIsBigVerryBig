@@ -35,6 +35,8 @@ public class AttackDecision : ScriptableDecisionOption
         for (int i = 0; i < FixedUpdateFramesChargedFor; i++)
         {
             yield return new WaitForFixedUpdate();
+            if (enermyAI == null || ah ==null || ah.spawnPoint == null)
+                yield break;
             var hit = Physics2D.Raycast(ah.spawnPoint.transform.position, enermyAI.transform.up,10);
             Debug.DrawRay(ah.spawnPoint.transform.position, enermyAI.transform.up * 10);
             if (hit)

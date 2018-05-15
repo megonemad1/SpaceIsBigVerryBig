@@ -55,6 +55,7 @@ MonoBehaviour:
   ships:
   - {fileID: 11400000, guid: dfd24e392f8deb04d9bead7ff01f6e29, type: 2}
   - {fileID: 11400000, guid: 76d9c080bd15d754394de5280a82d7dd, type: 2}
+  - {fileID: 11400000, guid: dc9d8f8b4d720f84ea5af7b90604b537, type: 2}
   DecisionsPerShip: 5
   SpawnTickIntervel: 4
   seed:
@@ -70,6 +71,7 @@ MonoBehaviour:
   right: 9
   _SpawnTick: {fileID: 114727473005774194}
   cam: {fileID: 0}
+  Player: {fileID: 0}
 --- !u!114 &114727473005774194
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -92,4 +94,4 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  tickIntervel: 1
+  tickIntervel: 0.5

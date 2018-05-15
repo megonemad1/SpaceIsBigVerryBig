@@ -15,6 +15,8 @@ public class MovemonetHarness : MonoBehaviour
     Vector2 topSpeed = new Vector2(10, 10);
     [SerializeField]
     PlayerScriptableObject playerdata;
+    [SerializeField]
+    UnityEventFloat onDirectionChanged;
     //onlu global for memory management;
     private Vector2 newVelocity;
 
@@ -32,6 +34,16 @@ public class MovemonetHarness : MonoBehaviour
             topSpeed.y *= 0.5f + playerdata.SpeedModifyer; 
         }
     }
+    IEnumerator scale()
+    {
+        var tmp = this.transform.localScale;
+        this.transform.localScale = new Vector3(this.transform.localScale.x * 0.8f, this.transform.localScale.y);
+        while (this.transform.localScale != tmp)
+        {
+            this.transform.localScale = Vector3.Lerp(this.transform.localScale, tmp, 0.1f);
+            yield return null;
+        }
+    }
 
     public void Move(Vector2 direction)
     {
@@ -43,7 +55,11 @@ public class MovemonetHarness : MonoBehaviour
 
             //if the direction has changed and it hasnt changed from zero
             if ((newVelocity.x > 0 && direction.x < 0) || (newVelocity.x < 0 && direction.x > 0) || direction.x == 0)
+            {
+                onDirectionChanged.Invoke(Mathf.Sign(newVelocity.x));
+                StartCoroutine(scale());
                 newVelocity.x -= newVelocity.x * dragAmount * Time.fixedDeltaTime;
+            }
 
             //if the direction has changed and it hasnt changed from zero
             if ((newVelocity.y > 0 && direction.y < 0) || (newVelocity.y < 0 && direction.y > 0) || direction.y == 0)

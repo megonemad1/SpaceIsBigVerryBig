@@ -17,11 +17,20 @@ public class HealthHandeler : HitLisoner
     UnityHealthEvent onDeath;
     [SerializeField]
     PlayerScriptableObject playerdata;
+    [SerializeField]
+    HealthHandeler shield;
+    [SerializeField]
+    bool _isShielded;
+    public  bool isShielded { get { return _isShielded; } set { _isShielded = value; } }
 
+    public void Reset()
+    {
+        health = maxHeath;
+    }
     private void Awake()
     {
         if (playerdata)
-            maxHeath *= playerdata.HealthModifyer*2 + 0.5f;
+            maxHeath *= playerdata.HealthModifyer * 2 + 0.5f;
         health = maxHeath;
     }
 
@@ -33,18 +42,24 @@ public class HealthHandeler : HitLisoner
 
     public void DealDamage(ScriptableDamageType damageType, GameObject sender)
     {
-        PlayerControler player = sender.GetComponent<PlayerControler>();
-        if (player)
-            health -= (player.playerdata.AtackModifyer*2 + 0.5f) * damageType.Magnitude;
-        else
-            health -= damageType.Magnitude;
-
-
-        onDamageTaken.Invoke(new HealthArgs() { damage = damageType, handeler = this, cause = sender });
-        if (health <= 0)
+        if (isShielded)
         {
-            health = 0;
-            onDeath.Invoke(new HealthArgs() { damage = damageType, handeler = this, cause = sender });
+        }
+        else
+        {
+            PlayerControler player = sender.GetComponent<PlayerControler>();
+            if (player)
+                health -= (player.playerdata.AtackModifyer * 2 + 0.5f) * damageType.Magnitude;
+            else
+                health -= damageType.Magnitude;
+
+
+            onDamageTaken.Invoke(new HealthArgs() { damage = damageType, handeler = this, cause = sender });
+            if (health <= 0)
+            {
+                health = 0;
+                onDeath.Invoke(new HealthArgs() { damage = damageType, handeler = this, cause = sender });
+            }
         }
     }
 }
